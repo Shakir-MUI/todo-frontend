@@ -6,7 +6,7 @@ function AddTodo({ onAdd }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await axios.post('http://localhost:8000/api/todos/', {
+        const response = await axios.post('https://todo-backend-ofty.onrender.com/api/todos/', {
             title,
             completed: false
         });
